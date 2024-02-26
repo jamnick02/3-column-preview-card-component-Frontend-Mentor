@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  overflow-x: hidden;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 930px;
+  height: 500px;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.box {
+  width: 310px;
+  height: 100%;
+  padding: 48.5px;
+}
+
+.box .box-title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 34px;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  margin: 42px 0;
+  text-transform: uppercase;
+}
+
+.box .box-text {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 88px;
+  word-spacing: 0.02em;
+}
+
+.box a {
+  padding: 17px 32px;
+  border-radius: 25px;
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+
+.box a:active {
+  background: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  outline: none;
+}
+
+.sedan a {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv a {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury a {
+  color: hsl(179, 100%, 13%);
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 860px) {
+  main {
+    width: 100vw;
+    height: auto;
+    padding: 20px 0;
+  }
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 325px;
+    min-width: 325px;
+    max-width: 325px;
+  }
+
+  .box {
+    width: 100%;
+  }
+}
